@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Model1</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Material Design Switch Demos</div>
+
+                <form method='POST' action="/">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Bootstrap Switch Default
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionDefault" value='Default' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionDefault" class="label-default"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap Switch Primary
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionPrimary" value='Primary' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionPrimary" class="label-primary"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap Switch Success
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionSuccess" value='Success' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionSuccess" class="label-success"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap Switch Info
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionInfo" value='Info' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionInfo" class="label-info"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap Switch Warning
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionWarning" value='Warning' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionWarning" class="label-warning"></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            Bootstrap Switch Danger
+                            <div class="material-switch pull-right">
+                                <input id="someSwitchOptionDanger" value='Danger' name="someSwitchOption001"
+                                    type="checkbox" />
+                                <label for="someSwitchOptionDanger" class="label-danger"></label>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
